@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+# fm_run
+#
+# Script to run development environment
+#
+
+# Stop on errors
+# See https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/
+set -Eeuo pipefail
+# Print commands on this file
+set -x
+
+if ! psql -lqt | grep -q personalwebsite; then
+  ./bin/personalwebsitedb create
+fi
+
+# Setting environment variables
+export FLASK_ENV=development
+export FLASK_APP=personalwebsite
+
+# Run flask server
+flask run --host 0.0.0.0 --port 8000
