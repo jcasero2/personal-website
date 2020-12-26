@@ -2,10 +2,10 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: './personalwebsite/js/main.jsx',
+  entry: './personalwebsite/js/header.jsx',
   output: {
     path: path.join(__dirname, '/personalwebsite/static/js/'),
-    filename: 'bundle.js',
+    filename: 'bundle_header.js',
   },
   module: {
     rules: [
