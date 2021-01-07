@@ -23,3 +23,9 @@ $(window).on("scroll", function() {
     $('nav').removeClass('white');
   }
 });
+
+$(document).on('click', '.homeMoreContainer', function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $(".resumeContainer").offset().top
+    }, 2000);
+});

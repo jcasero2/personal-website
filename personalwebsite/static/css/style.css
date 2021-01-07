@@ -84,6 +84,33 @@ nav ul li a {
       display: none;
 }
 
+.homeImgContainer {
+	/* image specified in seperate class  */
+	height: 700px;
+	width: 100%;
+}
+
+.homeImgOne {
+	background-image: url(../images/IMG_2171.jpg);
+	/* lt ie8 */
+	-ms-background-position-x: center;
+	-ms-background-position-y: bottom;
+	/* default - may override with classes or media query */
+	background-position: center bottom;
+	/* scale bg image proportionately */
+	background-size: cover;
+	/* ie8 polyfill */
+	-ms-behavior: url(backgroundsize.min.htc);
+	/* prevent scaling past src width (or not) */
+	/* max-width: 1200px; */
+}
+
+.bg-center-center {
+	-ms-background-position-x: center;
+	-ms-background-position-y: center;
+	background-position: center center;
+}
+
 .homeImg {
   background: url(../images/IMG_2171.jpg) no-repeat 50% 50%;
   background-size: contain;
@@ -94,6 +121,7 @@ nav ul li a {
   margin: 0;
   line-height: 65px;
   margin-top: -1px;
+  margin-bottom:
 }
 
 .homeImgCenter {
@@ -104,7 +132,7 @@ nav ul li a {
 }
 
 .homeTitle {
-    font-family: "Gravity-Regular";
+    font-family: "Times";
     color: white;
     letter-spacing: 15px;
     text-align: center;
@@ -121,6 +149,63 @@ nav ul li a {
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+}
+
+.homeMoreContainer {
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.homeMore {
+    font-family: "Gravity-Regular";
+    color: white;
+    text-align: center;
+}
+
+.resumeContainer {
+  /* image specified in seperate class  */
+  position: relative;
+  height: 700px;
+  width: 100%;
+  background-color: black;
+}
+
+.resumeImgContainer {
+	/* image specified in seperate class  */
+  height: 500px;
+  width: auto;
+  top: 5%;
+  left: 1%;
+  position: relative;
+}
+
+.resumeImg {
+	background-image: url(../images/IMG_2294.jpg);
+	/* lt ie8 */
+	-ms-background-position-x: center;
+	-ms-background-position-y: bottom;
+	/* default - may override with classes or media query */
+	background-position: center bottom;
+	/* scale bg image proportionately */
+	background-size: cover;
+	/* ie8 polyfill */
+	-ms-behavior: url(backgroundsize.min.htc);
+	/* prevent scaling past src width (or not) */
+	/* max-width: 1200px; */
+}
+
+/* media query */
+@media only screen and (min-width : 768px) {
+	.homeImgContainer { height: 789px; }
+  .homeDescription { text-align: left; }
+  .homeMoreContainer { top: 75%; }
+}
+
+@media only screen and (min-width : 1200px) {
+	.homeImgContainer { height: 789px; }
+  .homeMoreContainer { top: 75%; }
 }
 
 @media(max-width: 786px) {
@@ -163,4 +248,26 @@ nav ul li a {
             display: block;
       }
 
+      .homeDescription {
+            text-align: left;
+      }
+
+      .homeImgContainer {
+            height: 812px;
+      }
+
+      .homeMoreContainer {
+            top: 85%;
+      }
+
+      .resumeImgContainer {
+      	/* image specified in seperate class  */
+        height: 400px;
+        width: auto;
+        top: 5%;
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
 }

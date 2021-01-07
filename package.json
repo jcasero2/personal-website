@@ -2,7 +2,7 @@
   "name": "personalwebsite",
   "version": "0.1.0",
   "description": "personalwebsite front end",
-  "main": "fantasymanager/js/main.jsx",
+  "main": "personalwebsite/js/main.jsx",
   "author": "jcasero2",
   "license": "MIT",
   "repository": {},
