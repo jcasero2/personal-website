@@ -172,13 +172,47 @@ nav ul li a {
   background-color: black;
 }
 
+.resumeContainerLeft {
+  /* image specified in seperate class  */
+  float: left;
+  height: 600px;
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 30%;
+  justify-content: center;
+}
+
+.resumeContainerMiddle {
+  /* image specified in seperate class  */
+  float:left;
+  height: 600px;
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 35%;
+  justify-content: center;
+  padding-left: 7%;
+}
+
+.resumeContainerRight {
+  /* image specified in seperate class  */
+  float:left;
+  height: 600px;
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 35%;
+  justify-content: center;
+  padding-left: 7%;
+}
+
 .resumeImgContainer {
 	/* image specified in seperate class  */
-  height: 500px;
-  width: auto;
-  top: 5%;
-  left: 1%;
-  position: relative;
+  height: auto;
+  width: 80%;
+  top: 80px;
+  position: inherit;
 }
 
 .resumeImg {
@@ -194,6 +228,33 @@ nav ul li a {
 	-ms-behavior: url(backgroundsize.min.htc);
 	/* prevent scaling past src width (or not) */
 	/* max-width: 1200px; */
+}
+
+.btn-rounded-white {
+  top: 25%;
+  position: relative;
+  color: #fff;
+  padding: 15px 15px;
+  border: 3px solid #fff;
+  border-radius: 30px;
+  transition: .5s ease all;
+  margin: 0 auto;
+  display: inline-block;
+  -ms-transform: translate(-50%, -50%);
+}
+
+.relevantCourses {
+  padding-top: 20%;
+  font-family: "Gravity-Regular";
+  color: white;
+  text-align: left;
+}
+
+.relevantCourses h5 {
+  padding-top: 15px;
+  font-family: "Gravity-Regular";
+  color: white;
+  text-align: left;
 }
 
 /* media query */
@@ -260,14 +321,42 @@ nav ul li a {
             top: 85%;
       }
 
+      .resumeContainer {
+        height: 2000px;
+      }
+
+      .resumeContainerLeft {
+        /* image specified in seperate class  */
+        height: 550px;
+        position: relative;
+        width: 100%;
+      }
+
+      .resumeContainerMiddle {
+        /* image specified in seperate class  */
+        height: 650px;
+        position: relative;
+        width: 100%;
+        background-color: #808080;
+      }
+
+      .resumeContainerRight {
+        /* image specified in seperate class  */
+        height: 650px;
+        position: relative;
+        width: 100%;
+      }
+
       .resumeImgContainer {
       	/* image specified in seperate class  */
         height: 400px;
         width: auto;
         top: 5%;
         position: relative;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        vertical-align: middle;
+      }
+
+      .btn-rounded-white {
+        top: 10%;
       }
 }
